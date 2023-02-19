@@ -7,4 +7,11 @@ body {
   background-color: yellow;
   position: fixed;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.head svg {
+  height: 40px;
+  margin: 10px;
 }
