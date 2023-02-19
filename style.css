@@ -21,6 +21,7 @@ header {
   align-items: center;
   margin-left: 10px;
   justify-content: space-between;
+  font-size: larger;
 }
 
 .head svg {
@@ -31,41 +32,47 @@ header {
   display: flex;
   align-items: center;
 }
-.head .add-notes {
+
+.add-notes {
   margin-right: 20px;
 }
+
 main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-left: 20px;
 }
 
 .card {
-  width: 200px;
+  width: 300px;
   border-radius: 8px;
   margin: 10px;
+  height: 200px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
-.card .title,
-.card .text {
-  display: inline-block;
-}
-
-.card .title {
+.title {
   text-align: center;
   width: 100%;
+  display: inline-block;
   background-color: var(--title);
   font-family: var(--titler);
-  height: 20px;
+  font-size: larger;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-.card .text {
+.text {
   padding-left: 10px;
   padding-bottom: 10px;
+  width: calc(100% - 10px);
+  height: 100%;
   background-color: var(--text);
+  font-family: var(--textr);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   font-family: var(--textr);
+  word-wrap: break-word;
+  overflow-y: scroll;
 }
